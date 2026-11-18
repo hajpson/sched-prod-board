@@ -16,3 +16,16 @@ footer { color: #777; font-size: 13px; }
 .empty { color: #666; margin: 12px 0; }
 .row.sev3 .sev { color: #555; }
 .row.acked { background: #f6f6f6; }
+.row { cursor: pointer; }
+.row:hover { background: #f2f6ff; }
+.row.acked:hover { background: #efefef; }
+.panel { max-width: 960px; margin: 16px 0 0; padding: 16px; border: 1px solid #d9d9de; border-radius: 8px; background: #fff; }
+.panel[hidden] { display: none; }
+.panel h2 { margin: 0 0 6px; font-size: 17px; font-family: ui-monospace, monospace; }
+.panel h2 .psev { font-family: system-ui, sans-serif; font-size: 13px; color: #555; }
+.panel p { margin: 4px 0; }
+.panel .ptime { color: #555; font-variant-numeric: tabular-nums; }
+.panel .pact { margin-top: 12px; }
+.panel button { font: inherit; padding: 6px 14px; border: 1px solid #1d1d1f; border-radius: 6px; background: #1d1d1f; color: #fff; cursor: pointer; }
+.panel button:disabled { opacity: .5; cursor: default; }
+.panel [data-testid="acked"] { color: #0a7a33; font-weight: 600; }
