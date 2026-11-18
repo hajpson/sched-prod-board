@@ -7,8 +7,8 @@ mkdirSync(outDir, { recursive: true });
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({
-  viewport: { width: 1280, height: 720 },
-  recordVideo: { dir: outDir, size: { width: 1280, height: 720 } },
+  viewport: { width: 960, height: 640 },
+  recordVideo: { dir: outDir, size: { width: 960, height: 640 } },
   locale: 'en-GB',
   timezoneId: 'Europe/Berlin',
 });
